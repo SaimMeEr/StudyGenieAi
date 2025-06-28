@@ -4,6 +4,7 @@ import { quizEndpoints } from '../services/APIs';
 import { useSelector } from "react-redux"
 import QuizCard from '../components/core/AdminQuizes/QuizCard';
 import { deleteQuiz } from '../services/operations/QuizAPIs';
+// import {deleteQuiz} from "../services/operations/QuizAPIs"
 
 const AdminQuizes = () => {
 
