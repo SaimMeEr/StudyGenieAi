@@ -97,6 +97,7 @@ const SignUp = () => {
                 placeholder='Password'
                 className='py-1 text-base  placeholder:text-black text-slate-950 w-full rounded-lg px-3 outline-none bg-slate-300 xl:text-xl'
                 type={hidePassword.password ? "password" : "text"}
+                autoComplete="new-password"
                 {...register("password", { required: "Password is required" })}
               />
               <span
@@ -121,6 +122,7 @@ const SignUp = () => {
                 placeholder='Confirm Password'
                 className='py-1 text-base  placeholder:text-black text-slate-950 w-full rounded-lg px-3 outline-none bg-slate-300 xl:text-xl'
                 type={hidePassword.confirmPassword ? "password" : "text"}
+                autoComplete="new-password"
                 {...register("confirmPassword", { required: "Re-enter your password" })}
               />
               <span

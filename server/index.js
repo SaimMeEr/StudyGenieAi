@@ -15,9 +15,11 @@ database.connectToDB();
 
 app.use(express.json());
 app.use(cookieParser());
+
+console.log("CORS_ORIGIN:", process.env.CORS_ORIGIN); // Debug log
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: '*', // Temporarily allow all origins for debugging
     credentials: true,
     maxAge: 14400,
   })
